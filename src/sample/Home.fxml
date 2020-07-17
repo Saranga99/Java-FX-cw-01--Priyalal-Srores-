@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home">
+   <children>
+      <ImageView fitHeight="376.0" fitWidth="240.0" layoutX="-9.0" layoutY="27.0">
+         <image>
+            <Image url="@../PICS/Images%20and%20videos%20of%20travel.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="170.0" fitWidth="184.0" layoutX="-18.0" layoutY="19.0">
+         <image>
+            <Image url="@../PICS/Free%20HD%20Wallpapers%20for%20your%20computer_%20Strawberry%20falling%20in%20milk%20shake.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="94.0" layoutX="71.0" layoutY="189.0">
+         <image>
+            <Image url="@../PICS/Foods%20Chocolate%20Cream%20Biscuits%20And%20Slices%20Wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="391.0" fitWidth="441.0" layoutX="137.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../PICS/Delivery%20Rocket%20Logo%20_%20BrandCrowd%20Logo%20Maker%20-%20Google%20Chrome%204_29_2020%208_00_34%20AM.png" />
+         </image>
+      </ImageView>
+      <MenuBar prefHeight="25.0" prefWidth="577.0" style="-fx-background-color: #C0C0C0;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Category">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#methodClickAdd" text="Add Category" />
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickEdit" text="Edit Category" />
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickView" text="View Category" />
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickDelete" text="Delete Category" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Product and Stock Management">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#methodClickAddProduct" text="Add Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickSearchProduct" text="Search Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickViewProduct" text="View Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickEditProduct" text="Edit Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickDeleteProduct" text="Delete Product" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Stock">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#methodClickAddtoStock" text="Add to Stock" />
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickRemovefromStock" text="Remove from Stock" />
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickViewAllStock" text="View Stock (all)" />
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickViewStock" text="View Stock" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#methodClickAbout" text="About" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="93.0" fitWidth="76.0" layoutY="189.0">
+         <image>
+            <Image url="@../PICS/NYAPELA_%20Dreams%20plus%20agriculture!!!.jpg" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="-1.0" layoutY="28.0" opacity="0.35" prefHeight="376.0" prefWidth="577.0" style="-fx-background-color: #000000;" />
+      <Label layoutX="137.0" layoutY="323.0" opacity="0.32" prefHeight="78.0" prefWidth="441.0" style="-fx-background-color: #000000;" />
+      <Button layoutX="481.0" layoutY="350.0" mnemonicParsing="false" onAction="#methodClickBtnLogout" style="-fx-background-color: #000000;" text="Logout" textFill="#e1d4d4">
+         <effect>
+            <Glow>
+               <input>
+                  <DropShadow color="#a10808" />
+               </input>
+            </Glow>
+         </effect>
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="48.0" fitWidth="35.0" layoutX="137.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PICS/pngfuel.com.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="295.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../PICS/pngfuel.com%20(2).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="172.0" layoutY="337.0" prefHeight="25.0" prefWidth="108.0" text="Priyalal Stores" textFill="#d3caca">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="337.0" prefHeight="25.0" prefWidth="108.0" text="077 869 9848" textFill="#d3caca">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchProduct">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="600.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../PICS/La%20lujuria%20visual%20del%20'food%20porn'.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="36.0" layoutY="60.0" opacity="0.76" prefHeight="299.0" prefWidth="438.0" style="-fx-background-color: #1c2833;" />
+      <TextField fx:id="txtProductID" layoutX="226.0" layoutY="153.0" promptText="Enter Product ID here" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></TextField>
+      <TextField fx:id="txtProductName" layoutX="226.0" layoutY="236.0" promptText="Enter Product Name here" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></TextField>
+      <Label layoutX="88.0" layoutY="153.0" prefHeight="25.0" prefWidth="138.0" text="Search with ID" textFill="#ebdfdf">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="88.0" layoutY="236.0" prefHeight="25.0" prefWidth="138.0" text="Search with Name" textFill="#ebdfdf">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="375.0" layoutY="236.0" mnemonicParsing="false" onAction="#searchWithName" style="-fx-background-color: #000000;" text="Search" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#16fce9" />
+         </effect></Button>
+      <Button layoutX="375.0" layoutY="153.0" mnemonicParsing="false" onAction="#searchWithID" style="-fx-background-color: #000000;" text="Search" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#16fce9" />
+         </effect></Button>
+      <Button layoutX="427.0" layoutY="327.0" mnemonicParsing="false" onAction="#methodBack" style="-fx-background-color: #000000;" text="Back" textFill="#e1dddd">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#b90f0f" />
+         </effect></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddtoStock">
+   <children>
+      <ImageView fitHeight="408.0" fitWidth="618.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../PICS/Free%20HD%20Wallpapers%20for%20your%20computer_%20Strawberry%20falling%20in%20milk%20shake.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="-2.0" layoutY="-3.0" opacity="0.12" prefHeight="408.0" prefWidth="618.0" style="-fx-background-color: #000000;" />
+      <Label layoutX="43.0" layoutY="51.0" opacity="0.76" prefHeight="320.0" prefWidth="470.0" style="-fx-background-color: #1c2833;" />
+      <TextField fx:id="txtproductAmount" layoutX="295.0" layoutY="175.0" promptText="Enter Amount Here" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></TextField>
+      <ComboBox fx:id="comboProductIDs" layoutX="294.0" layoutY="114.0" prefWidth="150.0" promptText="Silect Product ID" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></ComboBox>
+      <ComboBox fx:id="comboUnits" layoutX="295.0" layoutY="231.0" prefHeight="25.0" prefWidth="149.0" promptText="Unit" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></ComboBox>
+      <Button layoutX="275.0" layoutY="295.0" mnemonicParsing="false" onAction="#clickAddtoStock" style="-fx-background-color: #000000;" text="Add" textFill="#e4dede">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#16fce9" />
+         </effect></Button>
+      <Label layoutX="145.0" layoutY="114.0" prefHeight="25.0" prefWidth="149.0" text="Product ID" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="175.0" prefHeight="25.0" prefWidth="149.0" text="Product Amount" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="231.0" prefHeight="25.0" prefWidth="149.0" text="Unit" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="465.0" layoutY="340.0" mnemonicParsing="false" onAction="#methodBack" style="-fx-background-color: #000000;" text="Back" textFill="#e4dddd">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#b90f0f" />
+         </effect></Button>
+   </children>
+</AnchorPane>

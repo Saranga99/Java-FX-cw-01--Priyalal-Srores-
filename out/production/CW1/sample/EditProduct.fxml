@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditProduct">
+   <children>
+      <ImageView fitHeight="412.0" fitWidth="600.0" layoutY="-12.0" pickOnBounds="true">
+         <image>
+            <Image url="@../PICS/g.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="29.0" layoutY="35.0" opacity="0.76" prefHeight="319.0" prefWidth="490.0" style="-fx-background-color: #1c2833;" />
+      <ComboBox fx:id="comboProductID" layoutX="274.0" layoutY="94.0" prefWidth="150.0" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></ComboBox>
+      <Label layoutX="40.0" layoutY="94.0" prefHeight="25.0" prefWidth="233.0" text="Silect Product what you want to Edit" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="comboCategories" layoutX="368.0" layoutY="200.0" prefWidth="150.0" promptText="New Category" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></ComboBox>
+      <Label layoutX="51.0" layoutY="164.0" prefHeight="25.0" prefWidth="105.0" text="New Vaues" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txtIdValue" layoutX="29.0" layoutY="200.0" promptText="New Product ID" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></TextField>
+      <TextField fx:id="txtNameValue" layoutX="208.0" layoutY="200.0" promptText="New Product Name" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></TextField>
+      <Button layoutX="246.0" layoutY="270.0" mnemonicParsing="false" onAction="#clickBtnUpdate" style="-fx-background-color: #000000;" text="Update" textFill="#f2eded">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#16fce9" />
+         </effect></Button>
+      <Button layoutX="467.0" layoutY="322.0" mnemonicParsing="false" onAction="#methodBack" style="-fx-background-color: #000000;" text="Back" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#b90f0f" />
+         </effect></Button>
+   </children>
+</AnchorPane>

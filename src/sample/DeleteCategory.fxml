@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="361.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeleteCategory">
+   <children>
+      <ImageView fitHeight="459.0" fitWidth="653.0" layoutX="-23.0" layoutY="-30.0" pickOnBounds="true">
+         <image>
+            <Image url="@../PICS/3samNOOR.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="34.0" opacity="0.54" prefHeight="314.0" prefWidth="457.0" style="-fx-background-color: #1c2833;" />
+      <TextField fx:id="txtDeleteCategory" layoutX="303.0" layoutY="148.0" prefHeight="25.0" prefWidth="178.0" promptText="Enter Category name to Delete" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></TextField>
+      <Button layoutX="367.0" layoutY="187.0" mnemonicParsing="false" onAction="#method2Delete" style="-fx-background-color: #000000;" text="Delete" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#16fce9" />
+         </effect></Button>
+      <ComboBox fx:id="comboCategories" layoutX="68.0" layoutY="148.0" prefWidth="150.0" style="-fx-background-color: #000000;" visibleRowCount="5">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></ComboBox>
+      <Button layoutX="218.0" layoutY="148.0" mnemonicParsing="false" onAction="#method1Delete" style="-fx-background-color: #000000;" text="Delete" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#16fce9" />
+         </effect></Button>
+      <Button layoutX="453.0" layoutY="314.0" mnemonicParsing="false" onAction="#methodBack" style="-fx-background-color: #000000;" text="Back" textFill="#eee3e3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#b90f0f" />
+         </effect></Button>
+   </children>
+</AnchorPane>

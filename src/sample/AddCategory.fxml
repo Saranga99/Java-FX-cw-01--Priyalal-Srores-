@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddCategory">
+   <children>
+      <ImageView fitHeight="566.0" fitWidth="606.0" layoutX="-3.0" layoutY="-48.0" pickOnBounds="true">
+         <image>
+            <Image url="@../PICS/Rain%20Lights.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="138.0" layoutY="48.0" opacity="0.76" prefHeight="305.0" prefWidth="285.0" style="-fx-background-color: #1c2833;" />
+      <Button layoutX="260.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickBtnAdd" prefHeight="25.0" prefWidth="40.0" style="-fx-background-color: #000000;" text="+" textFill="#e8e3e3">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#16fce9" />
+         </effect>
+      </Button>
+      <TextField fx:id="txtCategory" layoutX="170.0" layoutY="159.0" prefHeight="30.0" prefWidth="220.0" promptText="Enter Category Here" style="-fx-background-color: #000000;">
+         <effect>
+            <DropShadow color="#084a6b" />
+         </effect></TextField>
+      <Button layoutX="376.0" layoutY="320.0" mnemonicParsing="false" onAction="#methodBack" style="-fx-background-color: #000000;" text="Back" textFill="#e1d8d8">
+         <effect>
+            <DropShadow color="#b90f0f" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
